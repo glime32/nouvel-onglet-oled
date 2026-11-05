@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Nouvel onglet OLED",
+  "version": "1.0.0",
+  "description": "Page Nouvel onglet noire avec des raccourcis rouges, pour Helium et les navigateurs Chromium.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["favicon"]
+}

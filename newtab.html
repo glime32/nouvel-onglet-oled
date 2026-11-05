@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="dark">
+  <title>Nouvel onglet</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <main id="raccourcis"></main>
+
+  <dialog id="fenetre">
+    <form id="formulaire">
+      <h2>Ajouter un raccourci</h2>
+      <label>Nom
+        <input id="nom" type="text" required spellcheck="false">
+      </label>
+      <label>Adresse
+        <input id="adresse" type="text" required spellcheck="false" placeholder="exemple.com">
+      </label>
+      <div class="boutons">
+        <button type="button" id="annuler">Annuler</button>
+        <button type="submit" class="principal">Ajouter</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="newtab.js"></script>
+</body>
+</html>

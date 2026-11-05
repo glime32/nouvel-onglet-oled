@@ -1,0 +1,161 @@
+:root {
+  --rouge: #ff3b3b;
+  --rouge-survol: #ff5c5c;
+  --violet: #610089;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000000;
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::selection { background: var(--violet); color: #ffffff; }
+
+#raccourcis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
+  width: min(1000px, 94vw);
+  margin-top: -6vh;
+}
+
+.raccourci {
+  position: relative;
+  width: 112px;
+}
+
+.lien, .ajouter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  border-radius: 14px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tuile {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--rouge);
+  transition: background 0.15s;
+}
+
+.lien:hover .tuile, .ajouter:hover .tuile { background: var(--rouge-survol); }
+
+/* rond noir sous l'icône, sinon les logos rouges (YouTube...) disparaissent */
+.rond {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000000;
+}
+
+.rond img { width: 24px; height: 24px; }
+
+.plus { font-size: 32px; line-height: 1; color: #000000; }
+
+.nom {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.supprimer {
+  position: absolute;
+  top: 4px;
+  right: 14px;
+  display: none;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--violet);
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.raccourci:hover .supprimer { display: block; }
+
+dialog {
+  width: min(360px, 90vw);
+  padding: 22px;
+  border: 2px solid var(--violet);
+  border-radius: 16px;
+  background: #000000;
+  background-clip: padding-box;
+  color: #ffffff;
+}
+
+dialog::backdrop { background: rgba(0, 0, 0, 0.7); }
+
+dialog h2 { margin: 0 0 16px; font-size: 18px; }
+
+dialog label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+
+dialog input {
+  height: 38px;
+  padding: 0 12px;
+  border: 2px solid var(--violet);
+  border-radius: 10px;
+  background: #000000;
+  background-clip: padding-box;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  caret-color: var(--rouge);
+}
+
+dialog input:focus { box-shadow: 0 0 0 3px rgba(97, 0, 137, 0.45); }
+
+.boutons { display: flex; justify-content: flex-end; gap: 10px; }
+
+.boutons button {
+  height: 38px;
+  padding: 0 18px;
+  border: 2px solid var(--violet);
+  border-radius: 19px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.boutons button.principal { background: var(--violet); }
+
+.boutons button:hover { filter: brightness(1.3); }
