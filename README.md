@@ -1,22 +1,28 @@
-# Nouvel onglet OLED
+<p align="center"><img src="docs/banner-nouvel-onglet-oled.png" alt="nouvel-onglet-oled" width="100%"></p>
 
-Une page « Nouvel onglet » toute noire avec des raccourcis ronds rouges, pour [Helium](https://github.com/imputnet/helium) et les autres navigateurs Chromium.
+<p align="center"><img src="https://img.shields.io/badge/browser-Chromium%20·%20Helium-000000?style=flat-square" alt="browser"> <img src="https://img.shields.io/badge/manifest-v3-610089?style=flat-square" alt="manifest"> <img src="https://img.shields.io/badge/license-MIT-610089?style=flat-square" alt="license"></p>
 
-Je l'ai faite pour aller avec mon thème noir OLED / violet (voir [stylus-oled](https://github.com/glime32/stylus-oled)) : Helium ne permet pas de changer la couleur des tuiles de sa page d'accueil, et Stylus n'a pas accès aux pages internes du navigateur. Le seul moyen, c'est de remplacer la page.
+<p align="center"><a href="README.fr.md">🇫🇷 Version française</a></p>
 
-## Fonctionnalités
+**A pure black "New tab" page with round red shortcuts**, for [Helium](https://github.com/imputnet/helium) and other Chromium browsers.
 
-- fond noir `#000000`, tuiles rouges `#ff3b3b`, accents violets `#610089` ;
-- chaque favicon est posée sur un rond noir, sinon les logos rouges (YouTube...) disparaissent sur le rouge ;
-- **+** pour ajouter un raccourci, la petite croix violette au survol pour en supprimer un ;
-- les raccourcis sont gardés en `localStorage`, les icônes viennent de l'API favicon de Chrome (aucune requête vers un service externe) ;
-- aucun script en arrière-plan, la page ne coûte rien quand elle n'est pas ouverte.
+Made to match my OLED black / purple theme ([stylus-oled](https://github.com/glime32/stylus-oled)): Helium doesn't let you change its new-tab tile colors, and Stylus can't reach internal browser pages — replacing the page is the only way.
 
-## Installation
+<p align="center"><img src="docs/newtab.png" width="100%" alt="new tab"></p>
 
-1. Télécharger ce dépôt (*Code → Download ZIP*) et le décompresser.
-2. Ouvrir `chrome://extensions` (ou `helium://extensions`).
-3. Activer le *Mode développeur*.
-4. *Charger l'extension non empaquetée* → choisir le dossier.
+## Features
 
-Les raccourcis par défaut se modifient directement depuis la page, ou dans `PAR_DEFAUT` en haut de `newtab.js`.
+- `#000000` background, red `#ff3b3b` tiles, purple `#610089` accents;
+- each favicon sits on a black circle so red logos don't vanish on red (the preview above shows letters instead of real favicons);
+- **+** to add a shortcut, the small purple cross on hover to remove one;
+- shortcuts stored in `localStorage`, icons from Chrome's built-in favicon API (no external requests);
+- no background script at all.
+
+<p align="center"><img src="docs/newtab-ajout.png" width="100%" alt="add a shortcut"></p>
+
+## Install
+
+1. *Code → Download ZIP* and unzip it.
+2. Open `chrome://extensions` (or `helium://extensions`).
+3. Enable *Developer mode*.
+4. *Load unpacked* → pick the folder.
