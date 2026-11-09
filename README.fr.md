@@ -4,6 +4,8 @@
 
 <p align="center"><a href="README.md">🇬🇧 English version</a></p>
 
+> **Remplacé par [nouvel-onglet-cours](https://github.com/glime32/nouvel-onglet-cours).** Ce dépôt n'est plus mis à jour.
+
 Une page « Nouvel onglet » toute noire avec des raccourcis ronds rouges, pour [Helium](https://github.com/imputnet/helium) et les autres navigateurs Chromium.
 
 Je l'ai faite pour aller avec mon thème noir OLED / violet (voir [stylus-oled](https://github.com/glime32/stylus-oled)) : Helium ne permet pas de changer la couleur des tuiles de sa page d'accueil, et Stylus n'a pas accès aux pages internes du navigateur. Le seul moyen, c'est de remplacer la page.

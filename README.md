@@ -4,6 +4,8 @@
 
 <p align="center"><a href="README.fr.md">🇫🇷 Version française</a></p>
 
+> **Superseded by [nouvel-onglet-cours](https://github.com/glime32/nouvel-onglet-cours).** This repo is no longer updated.
+
 **A pure black "New tab" page with round red shortcuts**, for [Helium](https://github.com/imputnet/helium) and other Chromium browsers.
 
 Made to match my OLED black / purple theme ([stylus-oled](https://github.com/glime32/stylus-oled)): Helium doesn't let you change its new-tab tile colors, and Stylus can't reach internal browser pages — replacing the page is the only way.
